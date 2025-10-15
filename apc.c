@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, x;
+
+    if (scanf("%d %d", &a, &b) != 2)
+    { // leitura falhou
+        fprintf(stderr, "Input error: expected two integers.\n");
+        return 1;
+    }
+    x = a + b;
+    printf("X = %d\n", x);
+
+    return 0;
+}
