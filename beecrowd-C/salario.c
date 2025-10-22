@@ -1,14 +1,15 @@
 #include <stdio.h>
 int main (){
-    int num, horas, valor, salario; 
+    int num, horas;
+    double valor, salario; 
     scanf ("%d", &num);
     scanf ("%d", &horas);
-    scanf ("%d", &valor);
+    scanf ("%lf", &valor);
 
     salario=horas*valor;
 
     printf ("NUMBER = %d\n", num);
-    printf ("SALARY = U$ %d\n", salario);
+    printf ("SALARY = U$ %.2lf\n", salario);
 
     return 0;
 }
