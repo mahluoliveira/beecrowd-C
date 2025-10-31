@@ -8,7 +8,7 @@ int main()
     scanf("%lf", &salario);
     scanf("%lf", &vendas);
 
-    salario += (0.15 * vendas);
+    salario = (0.15 * vendas);
 
     printf("TOTAL = R$ %.2lf\n", salario);
     return 0;
